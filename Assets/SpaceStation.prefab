@@ -135,6 +135,8 @@ MonoBehaviour:
   firePointRotator: {fileID: 6172821781419775083}
   shotPrefab: {fileID: 4601734703652931259, guid: 283e59accd6e61d44b0dee654860fe7b, type: 3}
   rotateSpeed: 90
+  rb: {fileID: 0}
+  impulsePower: 0.001
 --- !u!58 &7534471691022546387
 CircleCollider2D:
   m_ObjectHideFlags: 0

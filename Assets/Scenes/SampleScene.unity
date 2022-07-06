@@ -299,7 +299,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1381402651
+--- !u!1001 &1667065199
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -308,15 +308,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3921913319390341546, guid: ffbdf3c64a4791c488a476b8b0a4f046, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3921913319390341546, guid: ffbdf3c64a4791c488a476b8b0a4f046, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2
+      value: 2.9273367
       objectReference: {fileID: 0}
     - target: {fileID: 3921913319390341546, guid: ffbdf3c64a4791c488a476b8b0a4f046, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.5180928
       objectReference: {fileID: 0}
     - target: {fileID: 3921913319390341546, guid: ffbdf3c64a4791c488a476b8b0a4f046, type: 3}
       propertyPath: m_LocalPosition.z
@@ -358,14 +358,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpaceStation (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 7534471691022546387, guid: ffbdf3c64a4791c488a476b8b0a4f046, type: 3}
-      propertyPath: m_Radius
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7977253247731534001, guid: ffbdf3c64a4791c488a476b8b0a4f046, type: 3}
-      propertyPath: firePointRotator
-      value: 
-      objectReference: {fileID: 1807746882}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffbdf3c64a4791c488a476b8b0a4f046, type: 3}
 --- !u!1001 &1799656168
@@ -377,7 +369,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3921913319390341546, guid: ffbdf3c64a4791c488a476b8b0a4f046, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3921913319390341546, guid: ffbdf3c64a4791c488a476b8b0a4f046, type: 3}
       propertyPath: m_LocalPosition.x
@@ -436,16 +428,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 292473417}
     - target: {fileID: 7977253247731534001, guid: ffbdf3c64a4791c488a476b8b0a4f046, type: 3}
+      propertyPath: impulsePower
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7977253247731534001, guid: ffbdf3c64a4791c488a476b8b0a4f046, type: 3}
       propertyPath: firePointRotator
       value: 
       objectReference: {fileID: 1008994260}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffbdf3c64a4791c488a476b8b0a4f046, type: 3}
---- !u!4 &1807746882 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6172821781419775083, guid: ffbdf3c64a4791c488a476b8b0a4f046, type: 3}
-  m_PrefabInstance: {fileID: 1381402651}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8446510907288993135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -453,6 +444,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8227223016719592994, guid: 95af785b661c1de468afaa10ebb5d9f7, type: 3}
+      propertyPath: m_Mass
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -8227223016719592994, guid: 95af785b661c1de468afaa10ebb5d9f7, type: 3}
+      propertyPath: m_Constraints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8227223016719592994, guid: 95af785b661c1de468afaa10ebb5d9f7, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8446510908402020184, guid: 95af785b661c1de468afaa10ebb5d9f7, type: 3}
       propertyPath: m_RootOrder
       value: 3
