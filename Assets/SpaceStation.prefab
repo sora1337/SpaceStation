@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 3921913319390341546}
   - component: {fileID: 3921913319390341547}
   - component: {fileID: 7977253247731534001}
+  - component: {fileID: 7534471691022546387}
   m_Layer: 0
   m_Name: SpaceStation
   m_TagString: Untagged
@@ -131,7 +132,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 3921913320363419832}
+  firePointRotator: {fileID: 6172821781419775083}
   shotPrefab: {fileID: 4601734703652931259, guid: 283e59accd6e61d44b0dee654860fe7b, type: 3}
+  rotateSpeed: 90
+--- !u!58 &7534471691022546387
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3921913319390341557}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &3921913320363419833
 GameObject:
   m_ObjectHideFlags: 0

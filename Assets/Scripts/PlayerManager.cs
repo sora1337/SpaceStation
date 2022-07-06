@@ -12,5 +12,10 @@ public class PlayerManager : MonoBehaviour
         {
             currentPlayer.Shoot();
         }
+        
+        // if (Input.GetAxisRaw("Horizontal"))
+        {
+            currentPlayer.Aim(Input.GetAxisRaw("Horizontal"));
+        }
     }
 }
