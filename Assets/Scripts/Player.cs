@@ -46,22 +46,18 @@ public class Player : MonoBehaviour
         var movementY = Input.GetAxisRaw("Vertical");
         if (movementX == 1)
         {
-            Debug.Log("X");
             transform.position += new Vector3(impulsePower, 0, 0);
         }
         if (movementX == -1)
         {
-            Debug.Log("Neg X");
             transform.position += new Vector3(-impulsePower, 0, 0);
         }
         if (movementY == 1)
         {
-            Debug.Log("Y");
             transform.position += new Vector3(0, impulsePower, 0);
         }
         if (movementY == -1)
         {
-            Debug.Log("Neg Y");
             transform.position += new Vector3(0, -impulsePower, 0);
         }
         
