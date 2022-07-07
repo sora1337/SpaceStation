@@ -8,9 +8,27 @@ public class Player : MonoBehaviour
     [SerializeField] Transform firePointRotator;
     [SerializeField] GameObject shotPrefab;
     public float rotateSpeed = 90f;
-    public Rigidbody2D rb;
     public float impulsePower = 10f;
+    public int maxHealth = 10;
+    public int currentHealth;
 
+    public HealthBar healthBar;
+
+    private void Start() 
+    {
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
+    }
+
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
+        if(currentHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
     
     public void Shoot()
     {
@@ -28,18 +46,22 @@ public class Player : MonoBehaviour
         var movementY = Input.GetAxisRaw("Vertical");
         if (movementX == 1)
         {
+            Debug.Log("X");
             transform.position += new Vector3(impulsePower, 0, 0);
         }
         if (movementX == -1)
         {
+            Debug.Log("Neg X");
             transform.position += new Vector3(-impulsePower, 0, 0);
         }
         if (movementY == 1)
         {
+            Debug.Log("Y");
             transform.position += new Vector3(0, impulsePower, 0);
         }
         if (movementY == -1)
         {
+            Debug.Log("Neg Y");
             transform.position += new Vector3(0, -impulsePower, 0);
         }
         

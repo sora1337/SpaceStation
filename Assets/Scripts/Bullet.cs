@@ -8,6 +8,7 @@ public class Bullet : MonoBehaviour
     public Rigidbody2D rb;
     public Collider2D hitCollider;
     public float colliderWaitTime;
+    public int bulletPower = 2;
 
     void Start()
     {
@@ -21,8 +22,13 @@ public class Bullet : MonoBehaviour
         hitCollider.enabled = true;
     }
 
-    private void OnTriggerEnter2D(Collider2D hitInfo)
+    void OnTriggerEnter2D (Collider2D hitInfo)
     {
+        Player station = hitInfo.GetComponent<Player>();
+        if (station != null)
+        {
+            station.TakeDamage(bulletPower);
+        }
         Debug.Log(hitInfo.name);
         Destroy(gameObject);
     }

@@ -137,10 +137,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5305b5a620f0fa448c0c812e451020e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 3
   rb: {fileID: 6841193177858578150}
   hitCollider: {fileID: 7156862059823035799}
-  colliderWaitTime: 0.5
+  colliderWaitTime: 0.1
+  bulletPower: 2
 --- !u!114 &6951591313297756729
 MonoBehaviour:
   m_ObjectHideFlags: 0
