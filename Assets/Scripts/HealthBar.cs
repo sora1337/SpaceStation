@@ -9,7 +9,20 @@ public class HealthBar : MonoBehaviour
     public Slider slider;
     public Gradient gradient;
     public Image fill;
+    public Canvas Can;
 
+    void Update()
+    {
+        if (Input.GetKeyDown("t"))
+        {
+            Can.enabled = true;
+        }
+        if (Input.GetKeyDown("h"))
+        {
+            Can.enabled = false;
+        }
+        
+    }
     public void SetMaxHealth(int health)
     {
         slider.maxValue = health;

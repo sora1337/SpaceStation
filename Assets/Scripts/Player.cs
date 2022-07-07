@@ -7,10 +7,11 @@ public class Player : MonoBehaviour
     [SerializeField] Transform firePoint;
     [SerializeField] Transform firePointRotator;
     [SerializeField] GameObject shotPrefab;
+    [SerializeField] GameObject laserPrefab;
     public float rotateSpeed = 90f;
     public float impulsePower = 10f;
-    public int maxHealth = 10;
-    public int currentHealth;
+    public int maxHealth = 100;
+    public int currentHealth = 100;
 
     public HealthBar healthBar;
 
@@ -33,6 +34,14 @@ public class Player : MonoBehaviour
     public void Shoot()
     {
         Instantiate(shotPrefab, firePoint.position, firePoint.rotation);        
+    }
+
+    public void Shoot2()
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            Instantiate(laserPrefab, firePoint.position, firePoint.rotation);
+        }
     }
 
     public void Aim(float input)

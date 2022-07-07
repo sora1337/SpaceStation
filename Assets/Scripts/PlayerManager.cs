@@ -13,7 +13,12 @@ public class PlayerManager : MonoBehaviour
             currentPlayer.Shoot();
         }
 
-        currentPlayer.Aim(Input.GetAxisRaw("Fire2"));
+        if (Input.GetButtonDown("Fire2"))
+        {
+            currentPlayer.Shoot2();
+        }
+        
+        currentPlayer.Aim(Input.GetAxisRaw("Jump"));
         currentPlayer.Move();
 
     }

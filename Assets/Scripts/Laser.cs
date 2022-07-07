@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class Laser : MonoBehaviour
 {
-    public float speed = 20f;
+    public float speed = 200f;
     public Rigidbody2D rb;
     public Collider2D hitCollider;
     public float colliderWaitTime;
-    public int bulletPower = 20;
+    public int laserPower = 2;
 
     void Start()
     {
@@ -27,7 +27,7 @@ public class Bullet : MonoBehaviour
         Player station = hitInfo.GetComponent<Player>();
         if (station != null)
         {
-            station.TakeDamage(bulletPower);
+            station.TakeDamage(laserPower);
         }
         Debug.Log(hitInfo.name);
         Destroy(gameObject);
