@@ -50,7 +50,7 @@ public class Bullet : MonoBehaviour
         }
     }
 
-   /* private void OnTriggerExit2D(Collider collision) 
+    /*private void OnTriggerExit2D(Collider collision) 
     {
         if (collision.CompareTag("Wormhole"))
         {
