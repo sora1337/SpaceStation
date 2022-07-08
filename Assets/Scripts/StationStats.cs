@@ -1,11 +1,9 @@
 using UnityEngine;
 
-public abstract class StationStats : MonoBehaviour
+public class StationStats : MonoBehaviour
 {
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        Debug.Log("Destroy");
-    }
+    public string unitName;
+    
 
 
 }
