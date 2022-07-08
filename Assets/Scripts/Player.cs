@@ -38,10 +38,7 @@ public class Player : MonoBehaviour
 
     public void Shoot2()
     {
-        //for (int i = 0; i < 10; i++)
-        {
-            Instantiate(laserPrefab, firePoint.position, firePoint.rotation);
-        }
+        Instantiate(laserPrefab, firePoint.position, firePoint.rotation);
     }
 
     public void Aim(float input)

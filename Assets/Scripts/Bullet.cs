@@ -9,11 +9,20 @@ public class Bullet : MonoBehaviour
     public Collider2D hitCollider;
     public float colliderWaitTime;
     public int bulletPower = 20;
+    private GameObject currentPortal;
 
     void Start()
     {
         rb.velocity = transform.up * speed;
         StartCoroutine(EnableColliderRoutine());
+    }
+
+    void Update() 
+    {
+        if (currentPortal != null)
+        {
+            transform.position = currentPortal.GetComponent<Portal>().GetDestination().position;
+        }
     }
 
     IEnumerator EnableColliderRoutine()
@@ -32,4 +41,24 @@ public class Bullet : MonoBehaviour
         Debug.Log(hitInfo.name);
         Destroy(gameObject);
     }
+
+    private void OnTriggerEnter2D (Collider collision) 
+    {
+        if (collision.CompareTag("Wormhole"))
+        {
+            currentPortal = collision.gameObject;
+        }
+    }
+
+   /* private void OnTriggerExit2D(Collider collision) 
+    {
+        if (collision.CompareTag("Wormhole"))
+        {
+            if (collision.gameObject == currentPortal)
+            {
+                currentPortal = null;
+            }
+        }
+    }*/
+    
 }
