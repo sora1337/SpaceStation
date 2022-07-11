@@ -338,6 +338,7 @@ MonoBehaviour:
   firePointRotator: {fileID: 6172821781419775083}
   shotPrefab: {fileID: 4601734703652931259, guid: 283e59accd6e61d44b0dee654860fe7b, type: 3}
   laserPrefab: {fileID: 6203546733891055658, guid: 0798bd4549488e142bfd18e1858724d5, type: 3}
+  PlasmaGooPrefab: {fileID: 4601734703652931259, guid: f9ae25b6a0ebaad4eac61daedfa940c0, type: 3}
   rotateSpeed: 90
   impulsePower: 0.01
   maxHealth: 100
