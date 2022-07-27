@@ -6,29 +6,15 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 20f;
     public Rigidbody2D rb;
-    public Collider2D hitCollider;
-    public float colliderWaitTime;
+    //public Collider2D hitCollider;
+    //public float colliderWaitTime;
     public int bulletPower = 20;
-    private GameObject currentPortal;
+    //private GameObject currentPortal;
 
     void Start()
     {
         rb.velocity = transform.up * speed;
-        StartCoroutine(EnableColliderRoutine());
-    }
-
-    void Update() 
-    {
-        if (currentPortal != null)
-        {
-            transform.position = currentPortal.GetComponent<Portal>().GetDestination().position;
-        }
-    }
-
-    IEnumerator EnableColliderRoutine()
-    {
-        yield return new WaitForSeconds(colliderWaitTime);
-        hitCollider.enabled = true;
+        //StartCoroutine(EnableColliderRoutine());
     }
 
     void OnTriggerEnter2D (Collider2D hitInfo)
@@ -41,6 +27,22 @@ public class Bullet : MonoBehaviour
         Debug.Log(hitInfo.name);
         Destroy(gameObject);
     }
+
+    /*void Update() 
+    {
+        if (currentPortal != null)
+        {
+            transform.position = currentPortal.GetComponent<Portal>().GetDestination().position;
+        }
+    }*/
+
+    /*IEnumerator EnableColliderRoutine()
+    {
+        yield return new WaitForSeconds(colliderWaitTime);
+        hitCollider.enabled = true;
+    }*/
+
+    
 
     /*private void OnTriggerEnter2D (Collider collision) 
     {

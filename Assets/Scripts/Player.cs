@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     [SerializeField] Transform firePointRotator;
     [SerializeField] GameObject shotPrefab;
     [SerializeField] GameObject laserPrefab;
+    [SerializeField] GameObject PlasmaGooPrefab;
     public float rotateSpeed = 90f;
     public float impulsePower = 10f;
     public int maxHealth = 100;
@@ -39,6 +40,11 @@ public class Player : MonoBehaviour
     public void Shoot2()
     {
         Instantiate(laserPrefab, firePoint.position, firePoint.rotation);
+    }
+
+    public void Shoot3()
+    {
+        Instantiate(PlasmaGooPrefab, firePoint.position, firePoint.rotation);
     }
 
     public void Aim(float input)

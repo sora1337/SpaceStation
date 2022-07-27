@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 3750807000596039297}
   - component: {fileID: 5048059565532113574}
   - component: {fileID: -8213061455424509}
-  - component: {fileID: 6820038844168907222}
-  - component: {fileID: 7984824408503784907}
+  - component: {fileID: 7978948803051932568}
+  - component: {fileID: 6484349549971291885}
   - component: {fileID: 9173971191319957500}
   m_Layer: 0
-  m_Name: LaserPhoton
+  m_Name: LaserShot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6203546733891055658}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.934, y: -2.918, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -109,7 +109,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!70 &6820038844168907222
+--- !u!70 &7978948803051932568
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,7 +125,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1}
   m_Direction: 0
---- !u!114 &7984824408503784907
+--- !u!114 &6484349549971291885
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,14 +134,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6203546733891055658}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b662b0450416cd48906ba402604e7c6, type: 3}
+  m_Script: {fileID: 11500000, guid: e5305b5a620f0fa448c0c812e451020e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 5
   rb: {fileID: -8213061455424509}
-  hitCollider: {fileID: 6820038844168907222}
-  colliderWaitTime: 0
-  laserPower: 2
+  bulletPower: 2
 --- !u!114 &9173971191319957500
 MonoBehaviour:
   m_ObjectHideFlags: 0
