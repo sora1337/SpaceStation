@@ -312,6 +312,7 @@ GameObject:
   - component: {fileID: 8451594875256060424}
   - component: {fileID: 3145946538113951345}
   - component: {fileID: 3284129290108197651}
+  - component: {fileID: 4554874747875170068}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -365,16 +366,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba98b894b071d84d940d89d9fc9a1b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePoint: {fileID: 8451594874551417626}
-  firePointRotator: {fileID: 1625011204501374921}
-  shotPrefab: {fileID: 1923282062481320280, guid: f9620196d0b55ca45a45ba681ce9a584, type: 3}
-  laserPrefab: {fileID: 7697572322377375335, guid: 5da9c7640a98a74499589c3e6c9ec994, type: 3}
-  PlasmaGooPrefab: {fileID: 1293089561884966104, guid: bbba0b7c93c2e13408df13cf870d8ba1, type: 3}
   rotateSpeed: 90
   impulsePower: 0.01
   maxHealth: 100
   currentHealth: 0
+  firePoint: {fileID: 8451594874551417626}
+  firePointRotator: {fileID: 1625011204501374921}
+  bulletPrefabs:
+  - {fileID: 1923282062481320280, guid: f9620196d0b55ca45a45ba681ce9a584, type: 3}
+  - {fileID: 7697572322377375335, guid: 5da9c7640a98a74499589c3e6c9ec994, type: 3}
+  - {fileID: 1293089561884966104, guid: bbba0b7c93c2e13408df13cf870d8ba1, type: 3}
   healthBar: {fileID: 8848798306745366282}
+--- !u!50 &4554874747875170068
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8451594875256060439}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &8848798306742546259
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,26 +8,11 @@ public class PlayerManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
-        {
-            Debug.Log("Shoot 1");
-            currentPlayer.Shoot();
-        }
-
-        if (Input.GetButtonDown("Fire2"))
-        {
-            Debug.Log("Shoot 2");
-            currentPlayer.Shoot2();
-        }
-
-        if (Input.GetButtonDown("Fire3"))
-        {
-            Debug.Log("Shoot 3");
-            currentPlayer.Shoot3();
-        }
-        
-        currentPlayer.Aim(Input.GetAxisRaw("Jump"));
         currentPlayer.Move();
+        currentPlayer.Aim(Input.GetAxisRaw("Jump"));
         
+        if (Input.GetKeyDown(KeyCode.Keypad1)) currentPlayer.Shoot(0);
+        if (Input.GetKeyDown(KeyCode.Keypad2)) currentPlayer.Shoot(1);
+        if (Input.GetKeyDown(KeyCode.Keypad3)) currentPlayer.Shoot(2);
     }
 }
