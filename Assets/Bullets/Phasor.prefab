@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8098487971067131711
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1923282062481320280, guid: f9620196d0b55ca45a45ba681ce9a584, type: 3}
+      propertyPath: m_Name
+      value: Phasor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923282062481320283, guid: f9620196d0b55ca45a45ba681ce9a584, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923282062481320283, guid: f9620196d0b55ca45a45ba681ce9a584, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923282062481320283, guid: f9620196d0b55ca45a45ba681ce9a584, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923282062481320283, guid: f9620196d0b55ca45a45ba681ce9a584, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923282062481320283, guid: f9620196d0b55ca45a45ba681ce9a584, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923282062481320283, guid: f9620196d0b55ca45a45ba681ce9a584, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923282062481320283, guid: f9620196d0b55ca45a45ba681ce9a584, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923282062481320283, guid: f9620196d0b55ca45a45ba681ce9a584, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923282062481320283, guid: f9620196d0b55ca45a45ba681ce9a584, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923282062481320283, guid: f9620196d0b55ca45a45ba681ce9a584, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923282062481320283, guid: f9620196d0b55ca45a45ba681ce9a584, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051219782823142855, guid: f9620196d0b55ca45a45ba681ce9a584, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8627451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051219782823142855, guid: f9620196d0b55ca45a45ba681ce9a584, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051219782823142855, guid: f9620196d0b55ca45a45ba681ce9a584, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923912074735891638, guid: f9620196d0b55ca45a45ba681ce9a584, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923912074735891638, guid: f9620196d0b55ca45a45ba681ce9a584, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923912074735891638, guid: f9620196d0b55ca45a45ba681ce9a584, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4239740527789696740, guid: f9620196d0b55ca45a45ba681ce9a584, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: f9620196d0b55ca45a45ba681ce9a584, type: 3}
+--- !u!1 &1602123827501556471 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7374777186270680520, guid: f9620196d0b55ca45a45ba681ce9a584, type: 3}
+  m_PrefabInstance: {fileID: 8098487971067131711}
+  m_PrefabAsset: {fileID: 0}
+--- !u!70 &4265634131331828673
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602123827501556471}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 1}
+  m_Direction: 0

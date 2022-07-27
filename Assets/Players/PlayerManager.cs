@@ -28,6 +28,6 @@ public class PlayerManager : MonoBehaviour
         
         currentPlayer.Aim(Input.GetAxisRaw("Jump"));
         currentPlayer.Move();
-
+        
     }
 }
