@@ -42,13 +42,13 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void OnTriggerEnter2D (Collider collision) 
+    /*private void OnTriggerEnter2D (Collider collision) 
     {
         if (collision.CompareTag("Wormhole"))
         {
             currentPortal = collision.gameObject;
         }
-    }
+    }*/
 
     /*private void OnTriggerExit2D(Collider collision) 
     {

@@ -616,7 +616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93f5e55d2049f704cbd5ba108849b0d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orbitSpeed: 50
+  orbitSpeed: 0
   pivotObject: {fileID: 429006900}
 --- !u!1001 &1521603576
 PrefabInstance:
